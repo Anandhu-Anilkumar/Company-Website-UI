@@ -1,0 +1,129 @@
+.cw-tile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: $color-white-1;
+    padding: $spacer-3;
+    border-radius: 8px;
+    box-shadow: 0px 18px 58px 16px $color-black-4;
+
+    &__icon {
+        padding: $spacer-3;
+        position: relative;
+    }
+
+    &__first-one {
+        width: 16px;
+        height: 16px;
+        fill: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__first-two {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        position: absolute;
+        bottom: 3px;
+        left: 3px;
+    }
+
+    &__first-three {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        position: absolute;
+        bottom: 6px;
+        left: 6px;
+    }
+
+    &__second-one {
+        width: 31px;
+        height: 29px;
+        fill: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__second-two {
+        width: 31px;
+        height: 13px;
+        fill: none;
+        position: absolute;
+        bottom: 11px;
+        left: 0;
+    }
+
+    &__third-one {
+        width: 28px;
+        height: 28px;
+        fill: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__third-two {
+        width: 30px;
+        height: 30px;
+        fill: none;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    &__fourth-one {
+        width: 33px;
+        height: 18px;
+        fill: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__fourth-two {
+        width: 12px;
+        height: 12px;
+        fill: none;
+        position: absolute;
+        bottom: 6px;
+        left: 2px;
+    }
+
+    &__fourth-three {
+        width: 16px;
+        height: 9px;
+        fill: none;
+        position: absolute;
+        bottom: 0;
+        left: 19px;
+    }
+
+    &__fourth-four {
+        width: 17px;
+        height: 10px;
+        fill: none;
+        position: absolute;
+        bottom: 18px;
+        left: 9px;
+    }
+
+    &__title {
+        width: 100%;
+        font-family: 'Playfair Display', serif;
+        color: $color-black-3;
+        font-size: 20px;
+        font-weight: $font-bold;
+        padding: $spacer-3 0 0 0;
+    }
+
+    &__desc {
+        width: 100%;
+        align-self: flex-end;
+        color: $color-grey-1;
+        padding: $spacer-3 0 0 0;
+    }
+}

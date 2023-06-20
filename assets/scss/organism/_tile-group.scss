@@ -1,0 +1,62 @@
+.cw-tile-group {
+    background-color: $color-blue-3;
+    padding: $spacer-3 0;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacer-3;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: $font-bold;
+        padding: $spacer-3 0 0 0;
+    }
+
+    &__desc {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: $color-grey-1;
+        padding: $spacer-3 0 0 0;
+    }
+
+    &__tiles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacer-3;
+    }
+}
+
+@include desktop {
+
+    .cw-tile-group {
+        padding: $spacer-5 0;
+
+        &__wrapper {
+            gap: $spacer-5;
+        }
+
+        &__content {
+            width: calc(40% - 16px);
+        }
+
+        &__title {
+            font-size: 48px;
+            padding: $spacer-5 0 0 0;
+        }
+
+        &__desc {
+            padding: $spacer-5 0 0 0;
+        }
+
+        &__tiles {
+            width: calc(60% - 16px);
+        }
+
+        .cw-tile {
+            width: calc(50% - 8px);
+        }
+    }
+}

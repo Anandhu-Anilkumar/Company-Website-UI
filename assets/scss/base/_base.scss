@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@500&family=Barlow:wght@600&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: $font-regular;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.cw-content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 $spacer-3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@include desktop {
+    .cw-content-wrapper {
+        padding: 0 $spacer-5;
+    }
+}

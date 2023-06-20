@@ -1,0 +1,62 @@
+.cw-client {
+    margin: 0 $spacer-3;
+
+    &__comment {
+        font-family: 'Poppins', sans-serif;
+        background-color: $color-white;
+        border-radius: 10px;
+        padding: $spacer-3;
+        box-shadow: 0px 10px 20px $color-black-6;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: $color-white;
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: $font-medium;
+        padding: 0 0 $spacer-3 0;
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+    }
+    
+    &__details {
+        margin: $spacer-5 0 0 0;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: 56px;
+    }
+
+    &__content {
+        padding: 0 0 0 $spacer-3;
+    }
+
+    &__name {
+        color: $color-black-7;
+        font-size: 18px;
+        font-weight: $font-bold;
+    }
+
+    &__designation {
+        color: $color-grey;
+    }
+}

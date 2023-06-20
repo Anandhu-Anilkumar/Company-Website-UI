@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients Testimonial</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="cw-testimonial">
+        <div class="cw-content-wrapper">
+            <h3 class="cw-testimonial__title">Clients Testimonial</h3>
+            <div class="cw-testimonial__wrapper">
+                <div class="cw-client">
+                    <div class="cw-client__comment">
+                        <p class="cw-client__title">Incredible Experience</p>
+                        <p class="cw-client__description">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                    </div>
+                    <div class="cw-client__details">
+                        <img class="cw-client__img" src="../assets/images/cw-client.png" alt="Client">
+                        <div class="cw-client__content">
+                            <p class="cw-client__name">Anya Tailor Joy</p>
+                            <p class="cw-client__designation">CEO, SF Industires</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-client">
+                    <div class="cw-client__comment">
+                        <p class="cw-client__title">Dependable, Responsive, Professional Partner</p>
+                        <p class="cw-client__description">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations.</p>
+                    </div>
+                    <div class="cw-client__details">
+                        <img class="cw-client__img" src="../assets/images/cw-client.png" alt="Client">
+                        <div class="cw-client__content">
+                            <p class="cw-client__name">Sri Alam</p>
+                            <p class="cw-client__designation">CEO, Membagongkan GROUP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-client">
+                    <div class="cw-client__comment">
+                        <p class="cw-client__title">Incredible Experience</p>
+                        <p class="cw-client__description">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.</p>
+                    </div>
+                    <div class="cw-client__details">
+                        <img class="cw-client__img" src="../assets/images/cw-client.png" alt="Client">
+                        <div class="cw-client__content">
+                            <p class="cw-client__name">Anya Tailor Joy</p>
+                            <p class="cw-client__designation">CEO, SF Industires</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cw-client">
+                    <div class="cw-client__comment">
+                        <p class="cw-client__title">Dependable, Responsive, Professional Partner</p>
+                        <p class="cw-client__description">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations.</p>
+                    </div>
+                    <div class="cw-client__details">
+                        <img class="cw-client__img" src="../assets/images/cw-client.png" alt="Client">
+                        <div class="cw-client__content">
+                            <p class="cw-client__name">Sri Alam</p>
+                            <p class="cw-client__designation">CEO, Membagongkan GROUP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../assets/js/jquery-3.6.4.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.cw-testimonial__wrapper').slick({
+                infinite: true,
+                speed: 500,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    
+</body>
+</html>

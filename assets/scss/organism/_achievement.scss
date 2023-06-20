@@ -1,0 +1,66 @@
+.cw-achievement {
+    background-image: url("../svg/cw-achievement-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $color-white;
+    font-family: 'Poppins', sans-serif;
+    padding: $spacer-3 0;
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        font-weight: $font-large;
+        text-align: center;
+        padding: 0 0 $spacer-3 0;
+    }
+
+    &__desc {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: $spacer-3 0 0 0;
+    }
+
+    &__count {
+        width: 100%;
+        padding: $spacer-3 0;
+    }
+
+    &__number {
+        font-size: 48px;
+        font-weight: $font-semi-large;
+        text-align: center;
+    }
+
+    &__summary {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+@include desktop {
+
+    .cw-achievement {
+        padding: $spacer-5 0;
+
+        &__wrapper {
+            padding: $spacer-5 0 0 0;
+        }
+
+        &__count {
+            width: calc(100% / 3);
+            padding: 0 $spacer-3;
+            border-right: 1px solid $color-white-2;
+    
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

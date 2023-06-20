@@ -1,0 +1,18 @@
+.cta {
+    width: 100%;
+}
+.cw-btn {
+    font-size: 16px;
+    background-color: $color-blue;
+    color: $color-white;
+    border: 1px solid $color-blue;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: $spacer-3;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-blue;
+    }
+}

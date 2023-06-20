@@ -1,0 +1,57 @@
+.cw-testimonial {
+    background-color: $color-blue-3;
+    padding: $spacer-3 0;
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        color: $color-black-5;
+        font-size: 48px;
+        font-weight: $font-bold;
+        text-align: center;
+        padding: 0 0 $spacer-3 0;
+    }
+
+    .slick-arrow {
+        z-index: 1;
+    }
+
+    .slick-prev {
+        left: (-$spacer-3);
+    
+        &::before {
+            content: "⟵";
+            font-size: 45px;
+            color: $color-black;
+        }
+    }
+    
+    .slick-next {
+        right: $spacer-3;
+    
+        &::before {
+            content: "⟶";
+            font-size: 45px;
+            color: $color-black;
+        }
+    }
+}
+
+
+@include desktop {
+
+    .cw-testimonial {
+        padding: $spacer-5 0;
+
+        &__title {
+            padding: 0 0 $spacer-5 0;
+        }
+
+        .slick-prev {
+            left: -50px;
+        }
+
+        .slick-next {
+            right: -18px;
+        }
+    }
+}

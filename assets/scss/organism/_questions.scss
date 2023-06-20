@@ -1,0 +1,76 @@
+.cw-questions {
+    padding: $spacer-3 0;
+
+    &__img {
+        border-radius: 0 0 0 30px;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 48px;
+        font-weight: $font-bold;
+        padding: $spacer-3 0;
+    }
+
+    &__desc {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+    }
+
+    .cta {
+        padding: $spacer-3 0;
+    }
+
+    .cw-btn {
+        font-size: 22px;
+        padding: $spacer-2 $spacer-3;
+        text-transform: none;
+
+        &:hover {
+            .cw-questions {
+                &__call {
+                    fill: $color-blue;
+                }
+            }
+        }
+    }
+
+    &__call-icon {
+        width: 26px;
+        height: 26px;
+        fill: none;
+        padding: $spacer-2 $spacer-1 0 0;
+    }
+
+    &__call {
+        fill: $color-white-3;
+        fill-rule: evenodd;
+        clip-rule: evenodd;
+    }
+}
+
+@include desktop {
+
+    .cw-questions {
+        padding: $spacer-5 0;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            width: 330px;
+        }
+
+        &__content {
+            width: calc(100% - 330px);
+            padding: 0 $spacer-5 0 0;
+        }
+
+        &__title {
+            padding: 0 0 $spacer-3 0;
+        }
+    }
+}

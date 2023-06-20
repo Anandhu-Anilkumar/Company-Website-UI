@@ -1,0 +1,119 @@
+.cw-footer{
+    color: $color-white-3;
+    font-family: 'Inter', sans-serif;
+
+    &__links {
+        background-color: $color-blue;
+        padding: $spacer-3 0;
+    }
+
+    &__company {
+        color: $color-white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        font-weight: $font-bold;
+        display: flex;
+        align-items: center;
+        gap: $spacer-3;
+    }
+
+    &__logo {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        font-size: 24px;
+        font-weight: $font-bold;
+        color: $color-blue-5;
+        font-family: 'Poppins', sans-serif;
+        background-color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        padding: 0 0 $spacer-2 0;
+    }
+
+    &__heading {
+        font-size: 20px;
+        font-weight: $font-medium;
+    }
+
+    .text-white {
+        font-size: 16px;
+    }
+
+    &__copyright {
+        background-color: $color-blue-6;
+        padding: $spacer-3 0;
+        color: $color-white-4;
+    }
+
+    .btn {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $color-grey-5;
+        --bs-btn-padding-x: 0;
+        --bs-btn-padding-y: 0;
+
+        &:hover {
+            background-color: $color-white;
+
+            .cw-footer {
+                &__social-icons {
+                    fill: $color-blue-6;
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                }
+            }
+        }
+    }
+
+    &__instagram {
+        width: 14px;
+        height: 14px;
+        fill: none;
+    }
+
+    &__dribbble {
+        width: 14px;
+        height: 14px;
+        fill: none;
+    }
+
+    &__twitter {
+        width: 12px;
+        height: 11px;
+        fill: none;
+    }
+
+    &__youtube {
+        width: 14px;
+        height: 11px;
+        fill: none;
+    }
+
+    &__social-icons {
+        fill: $color-white;
+        fill-rule: evenodd;
+        clip-rule: evenodd;
+    }
+}
+
+
+@include desktop {
+
+    .cw-footer{
+    
+        &__links {
+            padding: $spacer-5 0;
+        }
+
+        &__copyright {
+            padding: $spacer-5 0;
+        }
+    }
+
+}
